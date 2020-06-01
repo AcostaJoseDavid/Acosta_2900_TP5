@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Inicio</title>
+	</head>
+	<body>
+		<div id="contenedor">
+			<header>
+				<h1>Liga de futbol profesional</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="fixture.html" target="blank">Fixture y resultados</a></li>
+					<li><a href="equipos.html" target="blank">Equipos</a></li>
+				</ul>
+				<div id="welcome">
+					<h4 th:text = " 'Bienvenido! ' + ${usuario} "></h4> 
+				</div>
+			</nav>
+			<section id="contenido">
+				<h2>Noticias</h2>				
+				<div class="articulo">
+					<img alt="" src="img/noticia1.jpg">
+					<h1>El club Gorriti reabre sus puertas</h1>
+					<p>
+					Los diablos rojos de Avenida El Éxodo están listos 
+					para retomar las actividades deportivas respetando 
+					las normas sanitarias que indica el COE. El presidente 
+					Jorge Zamudio dejó en claro que todas las disciplinas 
+					del club pueden volver a entrenar solamente la parte 
+					física y respetando el distanciamiento social.
+					</p>
+				</div>
+				<div class="articulo">
+					<img alt="" src="img/noticia2.jpg">
+					<h1>Día del Dirigente Deportivo</h1>
+					<p>"Hay que poner en valor el trabajo del Dirigente Deportivo. 
+					Hay que apoyar la gestión y no dejarlo solo, el club somos 
+					todos", manifiesta Alberto Guevara, el responsable de esta nota. 
+					Se celebra el Día del Dirigente Deportivo en conmemoración 
+					a un nuevo aniversario de la muerte del ex presidente de Vélez, 
+					José Amalfitani.
+					</p>
+				</div>
+				<div class="articulo">
+					<img alt="" src="img/noticia3.jpg">
+					<h1>El club Comercio entre obras, mantenimiento y expectativas del debut en la Liga</h1>
+					<p>La institución de Alto Comedero fue aceptada por la Liga Jujeña de fútbol para 
+					formar parte del torneo en la temporada 2020, pero por la pandemia nunca pudo 
+					debutar. Su presidente, Adrián Montalvo, nos cuenta que es lo que están haciendo 
+					en plena cuarentena para sostener al club.
+					</p>
+				</div>
+			</section>
+			<aside>
+				<h2>Auspiciantes</h2>
+				<a href="#"><img alt="" src="img/auspiciante1.jpg"></a>
+				<a href="#"><img alt="" src="img/auspiciante2.jpg"></a>
+				<a href="#"><img alt="" src="img/auspiciante3.png"></a>
+				<a href="#"><img alt="" src="img/auspiciante4.jpg"></a>
+			</aside>
+			<footer>
+				<h2>Avda. Pedro Ortiz de Zarate N° 455 - Tel 388 4789555</h2>
+				<div id="redes">
+					<i class="fa fa-facebook-square" style="font-size:36px"></i>
+					<i class="fa fa-instagram" style="font-size:36px"></i>
+					<i class="fa fa-twitter-square" style="font-size:36px"></i>
+					<i class="fa fa-youtube-square" style="font-size:36px"></i>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
